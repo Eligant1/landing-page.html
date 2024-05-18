@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }*/
+    .nav{
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+
+    }
+    .top{
+      max-width: 1440px;
+      margin: auto;
+    }
+    
+    .nav a {
+      text-decoration: none;
+      color :hsl(243, 87%, 12%);
+      font-size: 20px;
+      padding: 20px;
+      font-family: [Raleway](https://fonts.google.com/specimen/Raleway) ;
+    }
+    .nav-links{
+      padding: auto;
+  
+    }
+    .hero,.third-section{
+      display: flex;
+      justify-content: space-between;
+      padding:50px;
+    }
+    .first-hero{
+      width: 50%;
+    }
+    .second-hero{
+      width: 50%;
+    }
+    .but, .but2{
+      background-color:hsl(228, 45%, 44%);
+      border-radius: 2px;
+      border:0;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border: none;
+      color: white;
+  padding: 15px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 250px;
+  
+    }
+    p{
+      font-size: 20px;
+    }
+    h2{
+      font-size: 35px;
+    }
+    .third-section{
+      background-image:url("./images/bg-curve-desktop.svg");
+      background-size:cover;
+     background-repeat : no-repeat;
+  background-position: center;
+  
+}
+    
+    .fylo-works{
+      
+      font-size: 20px;
+    }
+    .card{
+      width: 55%;
+      height: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 40px;
+    }
+    .avatar{
+      display:flex;
+      
+      align-items: center;
+    
+    }
+    .fourth-section{
+       background-color: hsl(238, 22%, 44%);
+       display: flex;
+       align-items: center;
+       padding: 50px;
+       color:white;
+    }
+    .last-section{
+      background-color:hsl(243, 87%, 12%) ;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 70px;
+
+    }
+    .fa {
+ /* padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;*/
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border-color: white;
+  border:9px;
+
+}
+.fa-facebook {
+  background:transparent;
+  color: white;
+  
+}
+.fa-twitter {
+  background:transparent;
+  color: white;
+}
+.fa-instagram {
+  background:transparent;
+  color: white;
+}
+.last-section a{
+  color:white;
+  text-decoration: none;
+}
+.gap{
+  gap: 2px;
+}
+@media screen and (max-width: 375px) 
+  </style>
+</head>
+<body>
+  <main class="top">
+    <section >
+    <nav class="nav" >
+      <div> <img src="./images/logo.svg"></div>
+      <div class="nav-links">
+        <a href="">Features</a>
+        <a href="">Team</a>
+        <a href="">Sign In</a>
+      </div>
+    </nav>
+  </section>
+    <section class="hero">
+      <div class="first-hero">
+        <h2>All your files in one secure location, accessible anywhere.</h2>
+      <p> Fylo stores your most important files in one secure location. 
+        Access them wherever you need, share and collaborate with friends, 
+        family, and co-workers.
+      </p>
+    <input  placeholder="Enter your email" style ="width:45%; height:45px;">
+  <button class="but">Get Started</button>
+</div>
+      <div class="second-hero">
+        <img src="./images/illustration-1.svg" style="width:100%; height: 100%;">
+      </div>
+    </section>
+    <section class="third-section">
+      <div class="hold" >
+       <h2>Stay productive, wherever you are
+      </h2>
+      <p>Never let location be an issue when accessing your files. Fylo has you 
+        covered for all of your file storage needs.
+      </p>
+      <p>Securely share files and folders with friends, family and colleagues for 
+        live collaboration. No email attachments required!
+      </p>
+      <a class="fylo-works" href="" style="color:green; font-size: 29px;"> See how Fylo works <i>	&#xf35a</i></a> 
+      <div class="card"><img src="./images/icon-quotes.svg" style="float:left;"><br>Fylo has improved our team productivity by an order of magnitude. Since 
+        making the switch our team has become a well-oiled collaboration machine.
+        <div class="avatar"><img src="./images/avatar-testimonial.jpg" style="float:left;width:42px;height:42px; border-radius: 50%;">
+          <list><h2 style="font-size: 22px;">Kyle Burton</h2>
+         <p>Founder & CEO, Huddle</p></list>
+      
+      </div>
+      </div>
+    </div>
+    <div class="illustration2">
+      <img src="./images/illustration-2.svg" style="width:100%; height: 80%;">
+    </div>
+    </section>
+    <section class="fourth-section">
+      <div>
+        <h2>  Get early access today
+        </h2>
+        <p class ="fourth-p" style="width:50%;">It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <div>
+        <div style="padding-bottom: 15px;">
+          <input placeholder="example@example.com" style="width:500px; height:45px; border-radius: 5px; border: 0;"></div>
+      <button class="but2" style="background-color:hsl(224, 93%, 58%) ; ">Get Started For Free</button></div>
+    </section>
+    <section class="last-section">
+      <div>
+       <div> <img src="./images/logo.svg" style=" -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);"></div>
+        <p><img src="./images/icon-phone.svg"> Phone: +1-543-123-4567</p>
+        <p><img src="./images/icon-email.svg"> example@fylo.com</p>
+      </div>
+       <div class="about">
+        <list><ul><a href="">About Us</a></ul>
+          <ul><a href="">Jobs</a></ul>
+          <ul><a href="">Press</a></ul>
+          <ul><a href="">Blog</a></ul>
+        </list>
+       </div>
+       <div class="contact"><list><ul><a href="">Contact Us</a></ul>
+        <ul><a href="">Terms</a></ul>
+        <ul><a href="">Privacy</a></ul>
+      </list></div>
+     <div class="gap"> <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+    </section>
+  </main>
+
+  
+
+  
+
+ 
+  
+
+  
+  
+  
+ 
+
+  
+  
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+  
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>
